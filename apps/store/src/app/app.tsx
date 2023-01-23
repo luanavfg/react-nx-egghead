@@ -9,6 +9,7 @@ import  CardMedia from "@material-ui/core/CardMedia";
 import  Typography  from "@material-ui/core/Typography";
 
 import {Header} from '@nxegghead/store/ui-shared'
+import {formatRating} from '@nxegghead/store/util-formatters'
 
 export const App = () => {
  return (
@@ -37,7 +38,7 @@ export const App = () => {
                   component="p"
                   className="game-rating"
                 >
-                  <strong>Rating:</strong> {x.rating}
+                  <strong>Rating:</strong> {formatRating(x.rating)}
                 </Typography>
               </CardContent>
             </CardActionArea>
