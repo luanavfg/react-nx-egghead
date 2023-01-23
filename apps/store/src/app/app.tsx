@@ -8,8 +8,12 @@ import CardContent from "@material-ui/core/CardContent";
 import  CardMedia from "@material-ui/core/CardMedia";
 import  Typography  from "@material-ui/core/Typography";
 
+import {Header} from '@nxegghead/store/ui-shared'
+
 export const App = () => {
  return (
+  <>
+  <Header/>
   <div className="container">
     <div className="games-layout">
     {getAllGames().map((x) => (
@@ -41,6 +45,8 @@ export const App = () => {
         ))}
     </div>
   </div>
+  </>
+  
  )
 };
 
